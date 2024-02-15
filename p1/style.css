@@ -1,0 +1,139 @@
+body {
+    background-repeat: no-repeat;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: #FFF6EC
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+p {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
+    cursor: pointer;
+} 
+
+.header {
+    position: fixed;
+    color: #8f612c;
+    /* margin: auto; */
+    height: fit-content;
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.footer {
+    position: fixed;
+    bottom: 1px;
+    margin:auto;
+    height: fit-content;
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+    color: #8f612c;
+    /* border: 1px solid black; */
+}
+
+.maincontainer {
+    display: inline-block;
+    position: fixed;
+    margin:auto;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    top: 20vh;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.navpoem {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+    letter-spacing: 0.5px;
+}
+
+.navpoem a:hover {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 700;
+    font-style: italic;
+    transition: all ease-in cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
+    cursor: pointer;
+}
+
+.typed-out {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 1s 1 normal both
+}
+
+
+.landing {
+    color:#FFF6EC;
+}
+
+
+.navcontainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: solid 4px red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    color: #8f612c;
+}
+
+.box1{
+    flex-grow: 1;
+    text-align: left;
+    /* border: 1px solid #c23939; */
+}
+
+.box2{
+    flex-grow: 1;
+    text-align: center;
+    /* border: 1px solid #c23939; */
+}
+
+
+.box3{
+    flex-grow: 1;
+    text-align: right;
+    /* border: 1px solid #c23939; */
+}
+
+.content {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
