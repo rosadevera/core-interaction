@@ -74,15 +74,16 @@ a:hover {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18pt;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
+    transition-duration: 1s;
 }
 
 .navpoem a:hover {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 700;
     font-style: italic;
-    transition: all ease-in cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
+    /* transition: ease-in-out cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s; */
     cursor: pointer;
 }
 
@@ -135,5 +136,6 @@ a:hover {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 24pt;
+    font-size: 1.75rem;
+    padding: 30px; 
 }
