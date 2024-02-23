@@ -1,0 +1,69 @@
+body {
+    background-color: #FFF6EC; /* Initial background color */
+    animation: mymove 60s forwards;
+}
+
+@keyframes mymove {
+  from {background-color: #FFF6EC;}
+  to {background-color: black;}
+}
+
+.text-color-animation {
+    animation: textcolor 80s forwards; /* Adjust duration as needed */
+}
+
+@keyframes textcolor {
+    from {
+        color: black; /* Starting color */
+    }
+    to {
+        color: #FFF6EC; /* Ending color */
+    }
+}
+
+.blur {
+    animation: blur 60s forwards;
+}
+
+@keyframes blur {
+    from {
+        text-shadow: 0 0 0px #000;
+    }
+    to {
+        color: transparent;
+        text-shadow: 0 0 8px #000;
+    }
+}
+
+
+.container {
+    margin:auto;
+    /* border: solid 4px red; */
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+
+.sleep-animation {
+    color: #FFF6EC;
+    animation: sleep 70s forwards; /* Adjust duration as needed */
+}
+
+.sleep-animation a {
+    text-decoration: none;
+}
+
+.sleep-animation:hover {
+    transition-duration: 1s;
+    text-shadow: 0 0 8px #FFF6EC;
+}
+
+@keyframes sleep {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}

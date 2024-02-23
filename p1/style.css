@@ -22,7 +22,7 @@ p {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
@@ -65,7 +65,7 @@ a:hover {
     height: 100vh;
     text-align: center;
     width: 100vw;
-    top: 20vh;
+    top: 22vh;
     align-items: center;
     /* border: 1px solid black; */
 }
@@ -137,5 +137,7 @@ a:hover {
     font-weight: 400;
     font-style: normal;
     font-size: 1.75rem;
-    padding: 30px; 
+    padding: 50px; 
+    text-align: center;
 }
+
