@@ -97,7 +97,13 @@
     margin: 5px;
     border-radius: 15px;
     border-color: black; 
+    animation: fadein 1s forwards;
 }
+
+@keyframes fadeIn{
+    0%{transform:translate(0px, 100px); opacity: 0;}
+    100%{transform:translate(0px, 0); opacity: 1;}
+  }
 
 .content button:hover {
     transition-duration: 1s;

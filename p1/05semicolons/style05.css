@@ -1,0 +1,33 @@
+.content1 {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75rem;
+    padding: 50px; 
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.semicolon {
+    line-height: -10;
+    font-size: 5rem;
+    color: #b41f2a;
+    cursor: pointer;
+    animation: floating 3s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the distance and direction */
+    }
+}
+
+.semicolon:hover {
+    cursor: pointer;
+}

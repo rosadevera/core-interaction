@@ -2,14 +2,6 @@ body {
     background-image: linear-gradient(#FFF6EC, black);
 }
 
-a {
-    color: #FFF6EC;
-}
-
-a:visited {
-    color: #FFF6EC;
-}
-
 
 .container {
     margin:auto;
@@ -20,21 +12,21 @@ a:visited {
 }
 
 .part1 {
-    padding-top:30vh;
-    padding-bottom: 70vh;
+    padding-top:27vh;
+    padding-bottom: 60vh;
     /* border: solid 4px black; */
 }
 
 .theend {
     position: sticky;
-    top: 10px;
+    top: 12px;
     font-size: 10rem;
 }
 
 .theend2 {
     position: sticky;
     text-shadow: 0 0 8px #FFF6EC;
-    top: 10px;
+    top: 12px;
     font-size: 10rem;
 }
 
@@ -52,6 +44,14 @@ a:visited {
 .white {
     color:#FFF6EC;
     font-size: 1.3rem;
+}
+
+.white a {
+    color: #FFF6EC;
+}
+
+.white a:visited {
+    color: #FFF6EC;
 }
 
 .container2 {
