@@ -58,6 +58,10 @@ header {
     /* border: 1px solid black; */
 }
 
+.index {
+    color: black;
+}
+
 footer {
     position: fixed;
     bottom: 10px;
@@ -78,11 +82,16 @@ p {
 
 a {
     text-decoration: underline;
+    color: black;
 }
 
-a:visited {
-    text-decoration: none;
+a {
+    text-decoration: underline;
     color: black;
+}
+
+#index a {
+    color: white;
 }
 
 a:hover {
@@ -94,7 +103,7 @@ a:hover {
 .maincontainer {
     position: fixed;
     width: 100vw;
-    height: 93vh;
+    height: 97vh;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -106,7 +115,7 @@ a:hover {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     letter-spacing: 0.5px;
     transition: ease-in-out 1.5s;
 
@@ -137,4 +146,15 @@ a:hover {
     font-size: 1.75rem;
     padding: 50px; 
     text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .maincontainer {
+        height: 93vh;
+    }
+    
+    .navpoem {
+        font-size: 1.25rem;
+    }
 }
