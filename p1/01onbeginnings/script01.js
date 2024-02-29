@@ -15,7 +15,7 @@ $(document).ready(function() {
         var nextIndex = parseInt(container.attr('id').replace('textContainer', '')) + 1;
         // Check if the button clicked is within the specific text container
         if (container.attr('id') === 'textContainer2') {
-            var $newText = $('<p>Not every poem is finished—one poem is abandoned, another catches fire and is carried away by the wind, which may be an ending, but it is the ending of a poem without an end. <br><br>Paul Valéry, the French poet and thinker, once said that no poem is ever ended, that every poem is merely abandoned.</p><br><p><a href="../home.html"><span class="abandon"> [ abandon this poem? ] </span></a></p>');
+            var $newText = $('<p>Not every poem is finished—one poem is abandoned, another catches fire and is carried away by the wind, which may be an ending, but it is the ending of a poem without an end. <br><br>Paul Valéry, the French poet and thinker, once said that no poem is ever ended, that every poem is merely abandoned.</p><br><p><a href="../home.html"><span class="abandon"> [ abandon this poem ] </span></a> or <a href="../02fallenfruit/fallenfruit.html"><span class="abandon"> [ move to next line ] </span></a></p>');
             $newText.addClass('animate-text'); // Apply the animation class
             $('#textContainer3').append($newText);
             scrollToElement($newText);

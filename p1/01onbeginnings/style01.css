@@ -99,7 +99,7 @@
     border-color: black; 
     animation: fadein 1s forwards;
     transition: ease-in-out 0.5s;
-}
+} 
 
 @keyframes fadeIn{
     0%{transform:translate(0px, 100px); opacity: 0;}
@@ -113,9 +113,12 @@
     box-shadow: 0 0 15px #000000;
   }
 
-  .abandon:hover {
-    transition-duration: 1s;
-    color:#ceb196;
+.abandon {
+    transition: ease-in-out 0.5s;
+}
+
+.abandon:hover {
+    color:#b41f2a;
   }
 
 

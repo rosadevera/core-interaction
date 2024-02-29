@@ -14,6 +14,7 @@
     width: 30vw;
     margin: auto;
     color: #FFF6EC;
+    transition: ease-in-out 0.5s;
 }
 
 .paint span:hover {
@@ -53,7 +54,6 @@
 }
 
 a:hover {
-    transition-duration: 1s;
     color: #b41f2a;
 }
 

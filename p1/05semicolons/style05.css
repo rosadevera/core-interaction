@@ -6,7 +6,6 @@
     padding: 50px; 
     text-align: left;
     animation: floating 3s ease-in-out infinite;
-    
 }
 
 .hidden {
@@ -21,12 +20,27 @@
 
 
 .semicolon {
-    font-size: 5rem;
-    color: #b41f2a;
+    font-size: 10rem;
+    color:transparent;
+    letter-spacing: 5rem;
+    -webkit-text-stroke: 1px #b41f2a; /* For Safari and Chrome */
+    text-stroke: 1px #b41f2a; /* Standard */
     cursor: pointer;
     animation: floating 3s ease-in-out infinite; /* Add the animation here */
     transition: ease-in-out 0.5s;
 }
+
+#block2 a{
+    color:black;
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    transition: ease-in-out 0.5s;
+}
+
+#block2 a:hover {
+    color:#b41f2a;
+  }
+
 
 @keyframes floating {
     0%, 100% {
@@ -40,6 +54,7 @@
 .semicolon:hover {
     cursor: pointer;
     text-shadow: 0 0 10px #b41f2a;
+    color: #b41f2a;
 }
 
 #colon1 {
@@ -83,6 +98,7 @@
         opacity: 1;
     }
 }
+
 
 
 @media only screen and (max-width: 768px) {

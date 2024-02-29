@@ -19,6 +19,10 @@
     /* border: solid 4px red; */
 }
 
+.child1 span {
+    color: #b41f2a;
+}
+
 .child2 {
     margin-top: 50px;
     font-family: "adobe-garamond-pro", serif;
