@@ -85,18 +85,22 @@ a {
     color: black;
 }
 
-a {
-    text-decoration: underline;
-    color: black;
-}
-
-#index a {
-    color: white;
-}
-
 a:hover {
     transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
     cursor: pointer;
+}
+
+
+#index {
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    z-index: 9999;
+    /* border: 1px solid red;  */
+}
+
+#index a {
+    color:white;
 }
 
 
@@ -117,6 +121,7 @@ a:hover {
     font-style: normal;
     font-size: 1.75rem;
     letter-spacing: 0.5px;
+    color: black;
     transition: ease-in-out 1.5s;
 
     -webkit-animation: floating 7s ease-in-out infinite alternate;
@@ -146,6 +151,18 @@ a:hover {
     font-size: 1.75rem;
     padding: 50px; 
     text-align: center;
+}
+
+body.changeBackground {
+    background-color: #FFF6EC; 
+    transition: background-color 3s ease; 
+}
+
+.changeTextColor p,
+.changeTextColor span,
+.changeTextColor a {
+    color: #8f612c !important; /* Change the text color to #8f612c */
+    text-decoration: none; /* Remove underline */
 }
 
 

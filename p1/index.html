@@ -9,17 +9,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/fjh7vgh.css">
     <link rel="stylesheet" href="https://use.typekit.net/fjh7vgh.css">
+    <script src="script.js"></script>
     <style>
-        body {background-color: #000000}
+        body {
+            margin: 0;
+            background-repeat: no-repeat;
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            background-color: black; /* Initial background color */
+            color: #FFF6EC; /* Default text color */
+            transition: background-color 1s ease; /* Smooth transition for background color change */
+        }
     </style>
 </head>
 <body>
 
-    <header class="index">
+    <section class="maincontainer">
+        <div class="navpoem">
+            <a href="../p1/01onbeginnings/onbeginnings.html">Beginnings</a>, like <a href="../p1/02fallenfruit/fallenfruit.html">fallen fruit</a><br>
+            scatter without a sound,<br>
+            An <a href="../p1/03actofthemind/actofthemind.html">act of the mind</a>,<br>
+            in <a href="../p1/04ourlifetime/ourlifetime.html">our lifetime</a>'s profound.<br>
+            <a href="../p1/05semicolons/semicolons.html">Semicolons</a> linger, hinting at a pause; <br>
+            <br>
+            In <a href="../p1/06theend/theend.html">The End</a>, the poem is <br>
+            the <a href="../p1/07originsconsequences/originsconsequences.html">consequence of its origins</a><br>
+            <a href="../p1/08goodnight/goodnight.html">Good night</a> falls softly,<br>
+            a tender adieu,<br>
+            In the vast expanse<br>
+            beginnings renew.<br>
+        </div>
+    </section>
+
+
+    <footer>
+        <p><a href="index.html">[ go to sleep ]</a></p>
+    </footer>
+    
+    <header class="index" id="headerIndex">
         <p>
-            on <span id="index"><a href="home.html">[ begin ]</a></span> nings
+            on <span id="index"><a id="beginLink" href="#">[ begin ]</a></span> nings
         </p>
     </header>
     
+
+
 </body>
 </html>
