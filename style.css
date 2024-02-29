@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Director-regular;
+    src: url(Director-Regular.otf);
+}
+
+@font-face {
+    font-family: Director-bold;
+    src: url(Director-bold.otf);
+}
+
+@font-face {
+    font-family: Standard-book;
+    src: url(standard-book.otf);
+}
+
+body {
+    background-repeat: no-repeat;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-top: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+.name {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: fit-content;
+    height: fit-content;
+    /* border: solid 4px red; */
+}
+
+h1 {
+    font-family: "Director-regular";
+    font-size: 1.25rem;
+    color: #d40d77;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #d40d77; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 2.5s steps(12, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #d40d77; }
+}
+
+h2 {
+    font-family: "Standard-book";
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.flower1 {
+    position: fixed;
+    top: 7vh;
+    left: 30vw;
+    font-size: 20rem;
+    animation:spin 60s linear infinite;
+}
+
+.flower1 a {
+    color:white;
+    text-decoration: none;
+    filter: drop-shadow(0px 0px 8px #ec80ff);
+    transition: ease-in-out 1s;
+}
+
+.flower1 a:hover {
+    color:#ec80ff;
+    cursor: pointer;
+}
+
+.flower2 {
+    position: fixed;
+    top: 25vh;
+    left: 75vw;
+    font-size: 20rem;
+    transition:ease-in-out 0.5s;
+    animation:spin 50s linear infinite;
+}
+
+.flower2 a {
+    color:white;
+    text-decoration: none;
+    filter: drop-shadow(0px 0px 8px #ffaf53);
+    transition: ease-in-out 1s;
+}
+
+.flower2 a:hover {
+    color:#ffaf53;
+    cursor: pointer;
+}
+
+.flower3 {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    font-size: 20rem;
+    transition:ease-in-out 0.5s;
+    animation: spin2 70s linear infinite;
+}
+
+.flower3 a {
+    color:white;
+    text-decoration: none;
+    filter: drop-shadow(0px 0px 8px #e3175e);
+    transition: ease-in-out 1s;
+}
+
+.flower3 a:hover {
+    color:#e3175e;
+    cursor: pointer;
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@keyframes spin2 { 
+    100% { 
+        -webkit-transform: rotate(-360deg); 
+        transform:rotate(-360deg); 
+    } 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .flower1 {
+        top: 12vh;
+        left: 7vw;
+        font-size: 17rem;
+        
+    }
+
+    .flower2 {
+        top: 35vh;
+        left: 40vw;
+        font-size: 17rem;
+    }
+  
+    .flower3 {
+        top: 60vh;
+        left: 20vw;
+        font-size: 17rem;
+    }
+
+}
