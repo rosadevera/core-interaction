@@ -45,16 +45,16 @@ body {
 }
 
 
-.sleep-animation {
+#sleep-animation {
     color: #FFF6EC;
     animation: sleep 70s forwards; /* Adjust duration as needed */
 }
-
-.sleep-animation a {
-    text-decoration: none;
+ 
+#sleep-animation a {
+    color: #FFF6EC;
 }
 
-.sleep-animation:hover {
+#sleep-animation:hover {
     transition-duration: 1s;
     text-shadow: 0 0 8px #FFF6EC;
 }

@@ -98,7 +98,16 @@ button:hover {
         flex-direction: column;
         padding: 20px;
         justify-content: start;
+        gap:20px;
         /* border: solid 4px red; */
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    .child2 {
+        margin-top: 15px;
     }
 
     .content1 {
@@ -110,7 +119,7 @@ button:hover {
     .content2 {
         width: 80%;
         max-height: 35vh;
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1;
         /* border: solid 4px red; */
     }
