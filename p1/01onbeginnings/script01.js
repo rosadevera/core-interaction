@@ -2,6 +2,7 @@ $(document).ready(function() {
     // Event delegation for the initial button
     $('.content').on('click', '#beginBtn', function() {
         var $newText = $('<p>No one has yet to <button class="beginBtn">begin</button> a life who will not end it.</p>');
+        $newText.addClass('animate-text'); // Apply the animation class
         $('#textContainer1').append($newText);
         scrollToElement($newText);
     });
@@ -15,10 +16,12 @@ $(document).ready(function() {
         // Check if the button clicked is within the specific text container
         if (container.attr('id') === 'textContainer2') {
             var $newText = $('<p>Not every poem is finished—one poem is abandoned, another catches fire and is carried away by the wind, which may be an ending, but it is the ending of a poem without an end. <br><br>Paul Valéry, the French poet and thinker, once said that no poem is ever ended, that every poem is merely abandoned.</p><br><p><a href="../home.html"><span class="abandon"> [ abandon this poem? ] </span></a></p>');
+            $newText.addClass('animate-text'); // Apply the animation class
             $('#textContainer3').append($newText);
             scrollToElement($newText);
         } else {
             var $newText = $('<p>In poetry, the number of <button class="beginBtn">begin</button>nings so far exceeds the number of endings that we cannot even conceive of it.</p>');
+            $newText.addClass('animate-text'); // Apply the animation class
             $('#textContainer' + nextIndex).append($newText);
             scrollToElement($newText);
         }

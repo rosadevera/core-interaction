@@ -2,18 +2,29 @@ body {
     background-image: linear-gradient(#FFF6EC, black);
 }
 
-
 .container {
     margin:auto;
     /* border: solid 4px black; */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
     width: 60vw;
+    animation:fadeInUp 1.5s ease forwards;
 }
 
+@keyframes fadeInUp{
+    0%{transform:translate(0px, 50px); opacity: 0;}
+    100%{transform:translate(0px, 0); opacity: 1;}
+  }
+
 .part1 {
+    position: relative;
+    align-items: center; 
+    text-align: center;
+    margin:auto;
     padding-top:27vh;
     padding-bottom: 60vh;
+    width:35vw;
     /* border: solid 4px black; */
 }
 
@@ -21,6 +32,8 @@ body {
     position: sticky;
     top: 12px;
     font-size: 10rem;
+    line-height: 1;
+    animation:fadeInUp 1s ease forwards;
 }
 
 .theend2 {
@@ -28,6 +41,7 @@ body {
     text-shadow: 0 0 8px #FFF6EC;
     top: 12px;
     font-size: 10rem;
+    line-height: 1;
 }
 
 .part2 {
@@ -60,4 +74,28 @@ body {
     justify-content: center;
     align-items: center;
     width: 60vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .content {
+        font-size: 1.25rem;
+    }
+
+    .part1 {
+        width:60vw;
+    }
+
+    .theend {
+        font-size: 7rem;
+        top: 20px;
+    }
+
+    .theend2 {
+        font-size: 7rem;
+        top: 20px;
+    }
+
+
 }

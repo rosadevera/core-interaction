@@ -75,3 +75,34 @@ a:hover {
         /* text-shadow: 0 0 0px #000;
     }
 } * */ 
+
+
+@media only screen and (max-width: 768px) {
+  
+    .container {
+        width: 80vw;
+    }
+
+    .content {
+        font-size: 1.25rem;
+    }
+
+    .paint {
+        font-size: 1.75rem;
+        padding: 20px;
+        width: 50vw;
+    }
+    
+    .paint2 {
+        font-size: 1.75rem;
+    }
+
+    .paint3 {
+        font-size: 1.75rem;
+    }
+
+    .paint4 {
+        font-size: 1.75rem;
+    }
+
+}

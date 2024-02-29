@@ -5,18 +5,27 @@
     font-size: 1.75rem;
     padding: 50px; 
     text-align: left;
+    animation: floating 3s ease-in-out infinite;
+    
 }
 
 .hidden {
     display: none;
+    animation:fadeInUp 1s ease forwards;
 }
 
+@keyframes fadeInUp{
+    0%{transform:translate(0px, 100px); opacity: 0;}
+    100%{transform:translate(0px, 0); opacity: 1;}
+  }
+
+
 .semicolon {
-    line-height: -10;
     font-size: 5rem;
     color: #b41f2a;
     cursor: pointer;
-    animation: floating 3s ease-in-out infinite alternate;
+    animation: floating 3s ease-in-out infinite; /* Add the animation here */
+    transition: ease-in-out 0.5s;
 }
 
 @keyframes floating {
@@ -30,4 +39,78 @@
 
 .semicolon:hover {
     cursor: pointer;
+    text-shadow: 0 0 10px #b41f2a;
+}
+
+#colon1 {
+    position:relative;
+    left:25vw;
+}
+
+#colon2{
+    position:relative;
+    left:20vw;
+}
+
+#colon3{
+    position:relative;
+    left:18vw;
+}
+
+#block1 {
+    position:relative;
+    width:40vw;
+    left:25vw;
+}
+
+#block2 {
+    position:relative;
+    width:45vw;
+    left:45vw;
+}
+
+.text-animation {
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translate(0px, 30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .content1 {
+        font-size: 1.25rem;
+    }
+
+    #block1 {
+        left:0vw;
+        width: 75vw;
+    }
+    
+    #block2 {
+        left:0vw;
+        width: 73vw;
+    }
+
+    #colon1 {
+        left:0vw;
+    }
+    
+    #colon2{
+        left:0vw;
+    }
+    
+    #colon3{
+        left:0vw;
+    }
+
 }

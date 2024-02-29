@@ -1,20 +1,41 @@
+.ourlifetime {
+    display: flex;
+    position: fixed;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height:fit-content;
+    width:97vw;
+    color: #8f612c;
+    /* border: 1px solid #c23939; */
+}
+
 .content1 {
+    width: fit-content;
+    height: 100vh;
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.75rem;
     padding: 50px; 
     text-align: left;
-    width:40vw;
-    border: 1px solid black;
+    /* border: 1px solid #c23939; */
 }
 
 .wrapper {
     display: flex;
+    width:fit-content;
+    height: fit-content;
     flex-direction: row;
-    width:500vw;
+    margin-top: 2.5rem;
+    margin-left: 80vw;
     transform:rotate (90deg) translateY(-100vh);
     transform-origin: top left;
+    gap: 15rem;
+    /* border: 1px solid #39c292; */
+    animation: scrollAnimation 80s linear infinite;
 }
 
 .outerwrapper {
@@ -25,11 +46,104 @@
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
-    flex-direction: row;
+    flex-direction: row; 
 }
 
 .child1 {
-    width:80vw;
-    padding-right: 20vw;
+    width:35vw;
     text-wrap: wrap;
+    /* border: 1px solid #396bc2; */
+}
+
+.child2 {
+    position: relative;
+    top: 45vh;
+    width:33vw;
+    text-wrap: wrap;
+    /* border: 1px solid #396bc2; */
+}
+
+.child3 {
+    position: relative;
+    top: 25vh;
+    width:35vw;
+    text-wrap: wrap;
+    /* border: 1px solid #396bc2; */
+}
+
+.child4 {
+    position: relative;
+    top: 35vh;
+    width:35vw;
+    text-wrap: wrap;
+    /* border: 1px solid #396bc2; */
+}
+
+.child5 {
+    position: relative;
+    top: 55vh;
+    width:35vw;
+    text-wrap: wrap;
+    /* border: 1px solid #396bc2; */
+}
+
+.child6 {
+    position: relative;
+    top: 5vh;
+    width:35vw;
+    text-wrap: wrap;
+    /* border: 1px solid #396bc2; */
+}
+
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    section.ourlifetime {
+        position:fixed;
+    }
+
+    .content1 {
+        font-size: 1.25rem;
+    }
+
+    .wrapper {
+        gap: 5rem;
+        animation: scrollAnimation 80s linear infinite;
+    }
+
+    .child1 {
+        width:60vw;
+    }
+
+    .child2 {
+        width:65vw;
+    }
+    
+    .child3 {
+        width:60vw;
+    }
+    
+    .child4 {
+        width:60vw;
+    }
+    
+    .child5 {
+        width:60vw;
+    }
+    
+    .child6 {
+        width:60vw;
+    }
+
 }
