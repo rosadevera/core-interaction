@@ -38,7 +38,7 @@ body {
 
 .theend2 {
     position: sticky;
-    text-shadow: 0 0 8px #FFF6EC;
+    text-shadow: 0 0 5px #FFF6EC;
     top: 12px;
     font-size: 10rem;
     line-height: 1;
@@ -57,7 +57,6 @@ body {
 
 .white {
     color:#FFF6EC;
-    font-size: 1.3rem;
 }
 
 .white a {
