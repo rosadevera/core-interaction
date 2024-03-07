@@ -10,14 +10,46 @@
 </head>
 <body>
 
-        <section class="name">
-            <h1>rosa de vera </h1>
-            <h2>Core 2: Interaction</h2>
-        </section>
+    <section class="name">
+        <h1>rosa de vera </h1>
+        <h2>Core 2: Interaction</h2>
+    </section>
 
-        <div class="flower1"><a href="./p1/index.html">✿</a></div>
-        <div class="flower2"><a>❀</a></div>
-        <div class="flower3"><a>❁</a></div>
+    <div class="flower1"><a href="./p1/index.html">✿</a></div>
+    <div class="flower2"><a>❀</a></div>
+    <div class="flower3"><a>❁</a></div>
+
+    <section class="container">
+        <h3>Project 1: Stories as Networks</h3>
+        <h3>Project 2: Elastic Collection</h3>
+        <h3>Project 3: TBD</h3>
+    </section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const flowers = document.querySelectorAll('.flower1, .flower2, .flower3');
+    const projects = document.querySelectorAll('.container h3');
+
+    flowers.forEach((flower, index) => {
+        let timeout;
+
+        flower.addEventListener('mouseenter', function() {
+            // Set a timeout to delay showing the corresponding project
+            timeout = setTimeout(() => {
+                projects[index].style.display = 'block';
+            }, 300); // 1000 milliseconds = 1 second
+        });
+
+        flower.addEventListener('mouseleave', function() {
+            // Clear the timeout if the mouse leaves before the delay
+            clearTimeout(timeout);
+
+            // Hide the corresponding project
+            projects[index].style.display = 'none';
+        });
+    });
+});
+    </script>
 
 </body>
 </html>

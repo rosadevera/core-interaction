@@ -1,3 +1,8 @@
+body {
+    margin:0;
+    overflow-y: hidden;
+}
+
 @font-face {
     font-family: Director-regular;
     src: url(Director-Regular.otf);
@@ -73,7 +78,7 @@ h2 {
 
 .flower1 {
     position: fixed;
-    top: 7vh;
+    top: 5vh;
     left: 30vw;
     font-size: 20rem;
     animation:spin 60s linear infinite;
@@ -114,7 +119,7 @@ h2 {
 
 .flower3 {
     position: fixed;
-    top: 50vh;
+    top: 55vh;
     left: 50vw;
     font-size: 20rem;
     transition:ease-in-out 0.5s;
@@ -145,6 +150,30 @@ h2 {
         -webkit-transform: rotate(-360deg); 
         transform:rotate(-360deg); 
     } 
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    /* border: 1px solid #000;  */
+}
+
+h3 {
+    font-family: "Director-regular";
+    font-size: 2rem;
+    color: black;
+}
+
+.container h3 {
+    display: none; /* Hide all h3 elements by default */
+}
+
+.flower1:hover + .container h3:nth-of-type(1),
+.flower2:hover + .container h3:nth-of-type(2),
+.flower3:hover + .container h3:nth-of-type(3) {
+    display: block; /* Show the corresponding h3 element when hovering over a flower */
 }
 
 
