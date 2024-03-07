@@ -14,7 +14,7 @@
 
 .content1 {
     width: fit-content;
-    height: 100vh;
+    height: 80vh;
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
     font-style: normal;
@@ -22,6 +22,8 @@
     padding: 50px; 
     text-align: left;
     /* border: 1px solid #c23939; */
+    /* border: 3px solid #c23939; */
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -34,19 +36,20 @@
     transform:rotate (90deg) translateY(-100vh);
     transform-origin: top left;
     gap: 15rem;
-    /* border: 1px solid #39c292; */
+    /* border: 3px solid #39c292; */
     animation: scrollAnimation 80s linear infinite;
 }
 
 .outerwrapper {
     position:fixed;
     width:100vw;
-    height: 100vh;
+    height: 90vh;
     transform:rotate (-90deg) translateX(-100vh );
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
     flex-direction: row; 
+    border: 3px solid #39c292;
 }
 
 .child1 {
@@ -57,7 +60,7 @@
 
 .child2 {
     position: relative;
-    top: 45vh;
+    top: 40vh;
     width:33vw;
     text-wrap: wrap;
     /* border: 1px solid #396bc2; */
@@ -81,7 +84,7 @@
 
 .child5 {
     position: relative;
-    top: 55vh;
+    top: 50vh;
     width:35vw;
     text-wrap: wrap;
     /* border: 1px solid #396bc2; */
