@@ -88,7 +88,7 @@ h2 {
     color:white;
     text-decoration: none;
     filter: drop-shadow(0px 0px 8px #ec80ff);
-    transition: ease-in-out 1s;
+    transition: ease-in-out .75s;
 }
 
 .flower1 a:hover {
@@ -99,7 +99,7 @@ h2 {
 .flower2 {
     position: fixed;
     top: 25vh;
-    left: 75vw;
+    right: 10vw;
     font-size: 20rem;
     transition:ease-in-out 0.5s;
     animation:spin 50s linear infinite;
@@ -109,7 +109,7 @@ h2 {
     color:white;
     text-decoration: none;
     filter: drop-shadow(0px 0px 8px #ffaf53);
-    transition: ease-in-out 1s;
+    transition: ease-in-out .75s;
 }
 
 .flower2 a:hover {
@@ -130,7 +130,7 @@ h2 {
     color:white;
     text-decoration: none;
     filter: drop-shadow(0px 0px 8px #e3175e);
-    transition: ease-in-out 1s;
+    transition: ease-in-out .75s;
 }
 
 .flower3 a:hover {
@@ -161,8 +161,9 @@ h2 {
 }
 
 h3 {
-    font-family: "Director-regular";
+    font-family: "Standard-book";
     font-size: 2rem;
+    letter-spacing: 0.5rem;
     color: black;
 }
 
@@ -180,22 +181,25 @@ h3 {
 
 @media only screen and (max-width: 768px) {
     .flower1 {
-        top: 12vh;
+        top: 9vh;
         left: 7vw;
-        font-size: 17rem;
+        font-size: 15rem;
         
     }
 
     .flower2 {
-        top: 35vh;
+        top: 32vh;
         left: 40vw;
-        font-size: 17rem;
+        font-size: 15rem;
     }
   
     .flower3 {
-        top: 60vh;
+        top: 55vh;
         left: 20vw;
-        font-size: 17rem;
+        font-size: 15rem;
     }
 
+    h3 {
+        font-size: 1.25rem;
+    }
 }
