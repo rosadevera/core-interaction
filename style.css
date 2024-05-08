@@ -169,6 +169,7 @@ h3 {
 
 .container h3 {
     display: none; /* Hide all h3 elements by default */
+    z-index: 999;
 }
 
 .flower1:hover + .container h3:nth-of-type(1),
